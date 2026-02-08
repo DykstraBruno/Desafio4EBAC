@@ -1,5 +1,7 @@
+//Receber valor inserido pelo usuário
 
-calcularValor() {
-    const valorInput = document.getElementById('valor');
-    const valor = parseFloat(valorInput.value);
-}
+//Função para definir o tempo baseado no valor inserido
+
+//calcular e exibir o resultado
+
+//caso o valor seja inválido, exibir mensagem de erro
