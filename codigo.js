@@ -2,14 +2,14 @@
 class Parquimetro {
     constructor() {
         this.tabela = [
-            { valor: 3,00, tempo: 120 },
-            { valor: 1,75, tempo: 60 },
-            { valor: 1,00, tempo: 30 }
+            { valor: 3.00, tempo: 120 },
+            { valor: 1.75, tempo: 60 },
+            { valor: 1.00, tempo: 30 }
         ];
     }
 
     calcular(valorInserido) {
-        if (valorInserido <= 1,00) {
+        if (valorInserido <= 1.00) {
             return { erro: "Valor insuficiente. O valor mínimo é R$ 1,00." };
         }
 
@@ -27,7 +27,7 @@ class Parquimetro {
 //Interface
 const parquimetro = new Parquimetro();
 
-function calcular() {
+function calcular(){
     const valor = parseFloat(document.getElementById("valor").value);
     const resultadoDiv= document.getElementById("resultado");
 
@@ -39,3 +39,4 @@ function calcular() {
     } 
 
     resultadoDiv.innerHTML = `<p>Tempo: ${resultado.tempo} minutos</p><p>Troco: R$ ${resultado.troco}</p>`;
+}
